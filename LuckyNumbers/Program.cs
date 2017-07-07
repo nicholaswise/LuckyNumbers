@@ -44,7 +44,41 @@ namespace LuckyNumbers
             //If the user says yes, then the program should run again from the beginning.
             //If the user says no, then the program should say "Thanks for playing!"(Must be exact statement).
 
+            //PART 1
 
+            Console.WriteLine("Welcome to LUCKY'S SUPER LOTTO! \nThe unique game of chance where YOU, the user, can take \ncontrol of your own fortune!");
+            Console.WriteLine("Ready to make some money? \nPress any key to begin! \n");
+            Console.ReadKey();
+
+            Console.Write("Enter a number (This will be the lowest number in the range): ");
+            int lowNumber = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter another number (This will be the highest number in the range): ");
+            int highNumber = int.Parse(Console.ReadLine());
+
+            int[] rangeNumbers = { lowNumber, highNumber };
+
+            //Console.WriteLine("Now enter SIX lucky numbers to WIN BIG!");
+            //Console.Write("First Number: ");
+            //int numberOne = int.Parse(Console.ReadLine());
+            //Console.Write("Second Number: ");
+            //int numberTwo = int.Parse(Console.ReadLine());
+            //Console.Write("Third Number: ");
+            //int numberThree = int.Parse(Console.ReadLine());
+            //Console.Write("Fourth Number: ");
+            //int numberFour = int.Parse(Console.ReadLine());
+            //Console.Write("Fifth Number: ");
+            //int numberFive = int.Parse(Console.ReadLine());
+            //Console.Write("Sixth Number: ");
+            //int numberSix = int.Parse(Console.ReadLine());
+
+            //int[] luckyNumbers = { numberOne, numberTwo, numberThree, numberFour, numberFive, numberSix };
+
+
+
+
+
+            
         }
     }
 }
