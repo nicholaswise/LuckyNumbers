@@ -56,7 +56,29 @@ namespace LuckyNumbers
             Console.Write("Enter another number (This will be the highest number in the range): ");
             int highNumber = int.Parse(Console.ReadLine());
 
-            int[] rangeNumbers = { lowNumber, highNumber };
+            //int[] rangeNumbers = { lowNumber, highNumber };
+
+
+            //int userNumbers = int.Parse(Console.ReadLine());
+            int[] userNumbers = new int[6];
+
+            Console.WriteLine("Now enter SIX numbers to WIN BIG!");
+            for (int i = 0; i <= userNumbers.Length - 1; i++)
+            { 
+                userNumbers[i] = int.Parse(Console.ReadLine());
+                while (userNumbers[i] < lowNumber || userNumbers[i] > highNumber)
+                {
+                    Console.WriteLine("Please enter a valid number: ");
+                    userNumbers[i] = int.Parse(Console.ReadLine());
+                }
+            }
+
+            Random randomNumber = new Random();
+            int[] numRan = { randomNumber.Next(lowNumber, highNumber++) };
+            
+            
+
+            
 
             //Console.WriteLine("Now enter SIX lucky numbers to WIN BIG!");
             //Console.Write("First Number: ");
@@ -78,7 +100,7 @@ namespace LuckyNumbers
 
 
 
-            
+
         }
     }
 }
