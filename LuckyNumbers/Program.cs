@@ -49,19 +49,19 @@ namespace LuckyNumbers
             Console.WriteLine("Press enter to see if your numbers match any of the lucky numbers! ");
             Console.ReadKey();
 
-            int match = 0;
-            foreach (int num in userNumbers)
+            int matchNums = 0;
+            foreach (int number in userNumbers)
             {
-                if (num == numRan[0] || num == userNumbers[0] || num == numRan[1] || num == userNumbers[1] || num == numRan[2] || num == userNumbers[2] || num == numRan[3] || num == userNumbers[3] || num == numRan[4] || num == userNumbers[4] || num == numRan[5] || num == userNumbers[5])
+                if (number == numRan[0] || number == numRan[1] || number == numRan[2] || number == numRan[3] || number == numRan[4] || number == numRan[5])
                 {
-                    match++;
+                    matchNums++;
                 }
             }
-            Console.WriteLine("You guessed " + match + " correctly!");
+            Console.WriteLine("You guessed " + matchNums + " correctly!");
 
             //Console says 6 correct even if 0 are correct?
 
-            Console.WriteLine("You won $" + jackpotAmt / 6 * match);
+            Console.WriteLine("You won $" + jackpotAmt / 6 * matchNums);
 
             Console.Write("Do you want to play again? y/n: ");
             string userResponse = Console.ReadLine();
@@ -69,7 +69,6 @@ namespace LuckyNumbers
             if (userResponseAny == "y")
             {
                 Console.Clear();
-                
             }
             if (userResponseAny != "y")
             {
