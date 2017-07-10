@@ -10,9 +10,7 @@ namespace LuckyNumbers
     {
         static void Main(string[] args)
         {
-            string userResponse = "y";
-            do
-            {
+            
                 int jackpotAmt = 100000;
 
                 Console.WriteLine("Welcome to LUCKY'S SUPER LOTTO! \nThe unique game of chance where YOU, the user, can take \ncontrol of your own fortune!");
@@ -69,21 +67,16 @@ namespace LuckyNumbers
                 Console.WriteLine("You won $" + jackpotAmt / 6 * matchNums);
 
                 Console.Write("Do you want to play again? y/n: ");
-                userResponse = Console.ReadLine();
+                string userResponse = Console.ReadLine();
                 string userResponseAny = userResponse.ToLower();
+               
+
                 if (userResponseAny != "y")
                 {
                     Console.WriteLine("Thanks for playing!");
-                    break;
                 }
 
-                while (userResponseAny == "y") ;
 
-
-
-}
-
+            }
         }
-        
-}
-}
+    }
