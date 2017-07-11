@@ -10,7 +10,6 @@ namespace LuckyNumbers
     {
         static void Main(string[] args)
         {
-
             int jackpotAmt = 100000;
 
             Console.WriteLine("Welcome to LUCKY'S SUPER LOTTO! \nThe unique game of chance where YOU, the user, can take \ncontrol of your own fortune!");
@@ -70,8 +69,12 @@ namespace LuckyNumbers
             string userResponse = Console.ReadLine();
             string userResponseAny = userResponse.ToLower();
             if (userResponseAny == "y")
+
+            //My goal was to clear the console and rerun the program, but i tried a few loop styles 
+            //and couldn't get them running.
             {
                 Console.Clear();
+
             }
 
             if (userResponseAny != "y")
